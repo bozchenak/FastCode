@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AppCartochka"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="38dp"
+            android:textSize="30sp"
+            android:layout_marginTop="100dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextNickname"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginHorizontal="48dp"
+            android:background="@drawable/custom_edit_text_rounded"
+            android:hint="Электронная почта"
+            android:paddingStart="24dp"
+
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="48dp"
+            android:background="@drawable/custom_edit_text_rounded"
+            android:hint="Пароль"
+            android:password="true"
+            android:paddingStart="24dp"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBgSelector"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:enabled="true"
+        android:gravity="center"
+        android:onClick="onButtonClick"
+        android:background="@drawable/btn_bg_selector"
+        android:text="Войти"
+        android:textAllCaps="false"
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnToSignUp"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:onClick="onSignUpClick"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_dark_selector"
+            android:text="Зарегистрироваться"
+            android:textAllCaps="false"
+            />
+
+
+
+
+
+</LinearLayout>
